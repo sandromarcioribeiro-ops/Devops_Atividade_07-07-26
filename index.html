@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca - Cadastro de Aluno</title>
+</head>
+<body>
+
+  <header>
+    <h1>Biblioteca Escolar</h1>
+    <p>Cadastro de Aluno</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Dados do Aluno</h2>
+
+      <form action="#" method="post">
+        <label for="nome">Nome completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome do aluno" required>
+        <br><br>
+
+        <label for="matricula">Matrícula:</label><br>
+        <input type="text" id="matricula" name="matricula" placeholder="Digite a matrícula" required>
+        <br><br>
+
+        <label for="turma">Turma:</label><br>
+        <input type="text" id="turma" name="turma" placeholder="Ex: 2º Ano A" required>
+        <br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="Digite o e-mail do aluno">
+        <br><br>
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone">
+        <br><br>
+
+        <label for="data-nascimento">Data de nascimento:</label><br>
+        <input type="date" id="data-nascimento" name="data-nascimento">
+        <br><br>
+
+        <label for="endereco">Endereço:</label><br>
+        <textarea id="endereco" name="endereco" rows="4" cols="40" placeholder="Digite o endereço do aluno"></textarea>
+        <br><br>
+
+        <label for="observacoes">Observações:</label><br>
+        <textarea id="observacoes" name="observacoes" rows="4" cols="40" placeholder="Digite observações, se houver"></textarea>
+        <br><br>
+
+        <button type="submit">Cadastrar Aluno</button>
+        <button type="reset">Limpar Campos</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Informações da Biblioteca</h2>
+
+      <p>Este formulário é apenas para fins didáticos.</p>
+      <p>Os dados preenchidos não são salvos em banco de dados, navegador ou qualquer outro tipo de armazenamento.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Sistema Didático de Biblioteca</p>
+  </footer>
+
+</body>
+</html>
