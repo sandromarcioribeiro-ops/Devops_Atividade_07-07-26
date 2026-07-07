@@ -59,17 +59,15 @@ formulario.addEventListener("submit", function (evento) {
   };
 
   console.log("Dados do aluno:", aluno);
-
   alert("Aluno cadastrado com sucesso!");
-
   formulario.reset();
 });
 
-formulario.addEventListener("reset", function () {
+formulario.addEventListener("reset", function (evento) {
   const confirmar = confirm("Deseja realmente limpar todos os campos?");
 
   if (!confirmar) {
-    event.preventDefault();
+    evento.preventDefault();
   }
 });
 
