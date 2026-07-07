@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca - Livros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Biblioteca Escolar</h1>
+    <p>Acervo Didático</p>
+    <nav class="menu">
+      <a href="index.html">Cadastro</a>
+      <a href="livros.html" class="ativo">Livros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Livros Disponíveis</h2>
+      <p class="texto-apoio">Lista simples para demonstrar o uso de tabelas, categorias e status de empréstimo em HTML.</p>
+
+      <div class="tabela-responsiva">
+        <table>
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Autor</th>
+              <th>Categoria</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>O Pequeno Príncipe</td>
+              <td>Antoine de Saint-Exupéry</td>
+              <td>Literatura</td>
+              <td><span class="status disponivel">Disponível</span></td>
+            </tr>
+            <tr>
+              <td>Dom Casmurro</td>
+              <td>Machado de Assis</td>
+              <td>Clássico</td>
+              <td><span class="status emprestado">Emprestado</span></td>
+            </tr>
+            <tr>
+              <td>A Bolsa Amarela</td>
+              <td>Lygia Bojunga</td>
+              <td>Infantojuvenil</td>
+              <td><span class="status disponivel">Disponível</span></td>
+            </tr>
+            <tr>
+              <td>Capitães da Areia</td>
+              <td>Jorge Amado</td>
+              <td>Romance</td>
+              <td><span class="status reservado">Reservado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="informacoes">
+      <h2>Uso Didático</h2>
+      <p>Esta página mostra como criar uma segunda tela no projeto e navegar entre arquivos HTML.</p>
+      <p>Os livros exibidos são exemplos e não representam um banco de dados real.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Sistema Didático de Biblioteca</p>
+  </footer>
+</body>
+</html>

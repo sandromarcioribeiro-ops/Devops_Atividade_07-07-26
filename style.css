@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  padding: 32px 20px;
+  padding: 32px 20px 24px;
   text-align: center;
   color: #ffffff;
   background: #1f5f8b;
@@ -25,6 +25,29 @@ header h1 {
 header p {
   margin: 0;
   font-size: 18px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.menu a {
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu .ativo {
+  color: #1f5f8b;
+  background: #ffffff;
 }
 
 main {
@@ -119,9 +142,59 @@ button:hover {
   background: #c6dceb;
 }
 
+.texto-apoio,
 .informacoes p {
   margin: 0 0 10px;
   line-height: 1.6;
+}
+
+.tabela-responsiva {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+th,
+td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #d8e2ea;
+  text-align: left;
+}
+
+th {
+  color: #ffffff;
+  background: #1f5f8b;
+}
+
+tr:nth-child(even) td {
+  background: #f6f9fb;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.disponivel {
+  color: #1f6b3a;
+  background: #dff3e6;
+}
+
+.emprestado {
+  color: #9b2c2c;
+  background: #f7dddd;
+}
+
+.reservado {
+  color: #775600;
+  background: #fff1c6;
 }
 
 .informacoes p:last-child {
