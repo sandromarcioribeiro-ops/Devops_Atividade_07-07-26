@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #24313d;
+  background: #eef3f7;
+}
+
+header {
+  padding: 32px 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #1f5f8b;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+  font-size: 18px;
+}
+
+main {
+  width: min(920px, calc(100% - 32px));
+  margin: 32px auto;
+}
+
+section {
+  margin-bottom: 24px;
+  padding: 28px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(31, 95, 139, 0.12);
+}
+
+h2 {
+  margin: 0 0 22px;
+  color: #1f5f8b;
+  font-size: 24px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo-completo,
+.acoes {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b9c7d3;
+  border-radius: 6px;
+  font: inherit;
+  color: #24313d;
+  background: #ffffff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid rgba(31, 95, 139, 0.18);
+  border-color: #1f5f8b;
+}
+
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background: #1f5f8b;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #17486a;
+}
+
+.botao-secundario {
+  color: #1f5f8b;
+  background: #d9e8f3;
+}
+
+.botao-secundario:hover {
+  background: #c6dceb;
+}
+
+.informacoes p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+.informacoes p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #24313d;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  section {
+    padding: 22px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+}
