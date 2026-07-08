@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca - Alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Biblioteca Escolar</h1>
+    <p>Lista de Alunos</p>
+    <nav class="menu">
+      <a href="index.html">Cadastro</a>
+      <a href="alunos.html" class="ativo">Alunos</a>
+      <a href="livros.html">Livros</a>
+      <a href="emprestimos.html">Empréstimos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Alunos Cadastrados</h2>
+      <p class="texto-apoio">Tabela de exemplo para representar como os alunos poderiam ser listados em um sistema real.</p>
+
+      <div class="tabela-responsiva">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Matrícula</th>
+              <th>Turma</th>
+              <th>E-mail</th>
+              <th>Situação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana Clara Souza</td>
+              <td>2026001</td>
+              <td>2º Ano A</td>
+              <td>ana.souza@escola.com</td>
+              <td><span class="status disponivel">Ativo</span></td>
+            </tr>
+            <tr>
+              <td>Bruno Martins</td>
+              <td>2026002</td>
+              <td>1º Ano B</td>
+              <td>bruno.martins@escola.com</td>
+              <td><span class="status reservado">Pendente</span></td>
+            </tr>
+            <tr>
+              <td>Carla Oliveira</td>
+              <td>2026003</td>
+              <td>3º Ano C</td>
+              <td>carla.oliveira@escola.com</td>
+              <td><span class="status disponivel">Ativo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="informacoes">
+      <h2>Uso Didático</h2>
+      <p>Esta página ajuda a demonstrar tabelas com dados organizados em linhas e colunas.</p>
+      <p>Os alunos exibidos são fictícios e servem apenas como exemplo visual.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Sistema Didático de Biblioteca</p>
+  </footer>
+</body>
+</html>

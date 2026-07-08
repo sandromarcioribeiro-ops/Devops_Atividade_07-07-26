@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca - Empréstimos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Biblioteca Escolar</h1>
+    <p>Controle de Empréstimos</p>
+    <nav class="menu">
+      <a href="index.html">Cadastro</a>
+      <a href="alunos.html">Alunos</a>
+      <a href="livros.html">Livros</a>
+      <a href="emprestimos.html" class="ativo">Empréstimos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Novo Empréstimo</h2>
+
+      <form action="#" method="post">
+        <div class="campo">
+          <label for="aluno">Aluno:</label>
+          <input type="text" id="aluno" name="aluno" placeholder="Digite o nome do aluno" required>
+        </div>
+
+        <div class="campo">
+          <label for="livro">Livro:</label>
+          <input type="text" id="livro" name="livro" placeholder="Digite o título do livro" required>
+        </div>
+
+        <div class="campo">
+          <label for="retirada">Data de retirada:</label>
+          <input type="date" id="retirada" name="retirada" required>
+        </div>
+
+        <div class="campo">
+          <label for="devolucao">Data de devolução:</label>
+          <input type="date" id="devolucao" name="devolucao" required>
+        </div>
+
+        <div class="campo campo-completo">
+          <label for="observacao-emprestimo">Observação:</label>
+          <textarea id="observacao-emprestimo" name="observacao-emprestimo" rows="4" placeholder="Digite uma observação sobre o empréstimo"></textarea>
+        </div>
+
+        <div class="acoes">
+          <button type="submit">Registrar Empréstimo</button>
+          <button type="reset" class="botao-secundario">Limpar Campos</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2>Empréstimos de Exemplo</h2>
+      <div class="tabela-responsiva">
+        <table>
+          <thead>
+            <tr>
+              <th>Aluno</th>
+              <th>Livro</th>
+              <th>Retirada</th>
+              <th>Devolução</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana Clara Souza</td>
+              <td>O Pequeno Príncipe</td>
+              <td>07/07/2026</td>
+              <td>14/07/2026</td>
+              <td><span class="status disponivel">No prazo</span></td>
+            </tr>
+            <tr>
+              <td>Bruno Martins</td>
+              <td>Dom Casmurro</td>
+              <td>01/07/2026</td>
+              <td>08/07/2026</td>
+              <td><span class="status reservado">Próximo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Sistema Didático de Biblioteca</p>
+  </footer>
+</body>
+</html>
